@@ -35,4 +35,5 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # system.prop
-TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.props
+
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
