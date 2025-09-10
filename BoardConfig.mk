@@ -34,6 +34,28 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
-# system.prop
+TARGET_USES_64_BIT_BINDER := true
+ALLOW_MISSING_DEPENDENCIES := true
 
+# Resolution
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1560
+
+# Debugging
+TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
+
+# TWRP
+TW_EXTRA_LANGUAGES := false
+TW_THEME := portrait_hdpi
+TW_USE_TOOLBOX := true
+# TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab WIP!
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_EXCLUDE_TWRPAPP := true
+TW_INCLUDE_CRYPTO := true
+TW_SCREEN_BLANK_ON_BOOT := true
+
+# system.prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+
+# TODO: Kernel, filesystem configs, misc things
